@@ -1,0 +1,78 @@
+.App {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+#header {
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 900;
+}
+
+#selected {
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#score {
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#text {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 900;
+}
+
+#selections {
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: khaki;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10em;
+  border-width: 3px;
+  border-color: black;
+  cursor: pointer;
+  border-style: solid;
+}
+
+#image {
+  margin: 10px;
+  padding: 0;
+  position: relative;
+  width:64px;
+  height:64px;
+  background: #c2c2c2;
+  border: 1px solid #000;
+  border-radius:3px;
+}
+#image img{
+  position: absolute;
+  left:50%;
+  top:50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  max-width:100%;
+  max-height: 100%;
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#image img.transparent {
+  opacity:0;
+}
